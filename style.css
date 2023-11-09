@@ -1,0 +1,117 @@
+@font-face {
+    font-family: boldfont;
+    src: url(/assets/Futura-Bold.ttf);
+}
+
+@font-face {
+    font-family: regularfont;
+    src: url(/assets/HelveticaNowText-Regular.ttf);
+}
+
+@font-face {
+    font-family: lightfont;
+    src: url(/assets/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.news-nav {
+    z-index:9999;
+ position: fixed;
+ width: 100vw;
+ border-bottom: 1px solid black;
+}
+
+.logo{
+    font-family: 'boldfont';
+}
+
+.text{
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'regularfont';
+    font-size: 1.7vh;
+    letter-spacing: 0.6px;
+}
+
+.searchbox{
+    position: relative;
+    margin-top: 2vh;
+}
+
+.text h3 {
+    cursor: pointer;
+}
+
+.news-nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 4vh;
+}
+
+.news-box {
+    width: 300px;
+     border: 1px solid rgb(64, 201, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    top: 15vh;
+}
+
+.news-box:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.boxtext {
+    font-family: 'lightfont';
+    font-weight: 300;
+    padding: 1vh 2vh;
+    line-height: 4.7vh;
+    font-size: 2vh;
+}
+
+#title{
+    font-family: 'Poppins', sans-serif;
+    line-height: 3vh;
+    text-transform: capitalize;
+    color:rgb(70, 189, 236);
+}
+
+#news-container{
+    padding: 3vh 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5vw;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#dataandtime {
+   font-weight: bold;
+   color:rgb(99, 202, 243);
+}
+
+#description {
+    line-height: 3vh;
+}

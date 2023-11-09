@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="news-nav">
+       <h2 class="logo">Newshub</h2>
+        <div class="text">
+            <h3 onclick="handleactive('business')">BUSINESS</h3>
+            <h3 onclick="handleactive('finance')">FINANCE</h3>
+            <h3 onclick="handleactive('entertainment')">ENTERTAINMENT</h3>
+        </div>
+        <div class="searchbox">
+            <form action="#">
+                <input type="text" name="" placeholder="eg:cowboy">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div id="news-container">
+        </div>
+    </main>
+    
+    <template id="news-card-template">
+        <div class="news-box">
+            <a href="#" target="_blank" class="href">
+            <img src="https://plus.unsplash.com/premium_photo-1680553491336-644d5955ea50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" alt="" width="300" class="news-img"> </a>
+            <div class="boxtext">
+                <h3 id="title">title</h3>
+                <h4 id="description">discription</h4>
+                <h3 id="dataandtime"><b>date and time</b></h3>
+            </div>
+
+        </div>
+    </template>
+
+
+    <!-- <footer class="site-footer">
+        <p>&copy; 2023 Newshub. All rights reserved.</p>
+    </footer> -->
+
+ <script src="script.js"></script>
+
+</body>
+</html>
