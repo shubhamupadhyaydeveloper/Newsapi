@@ -1,6 +1,7 @@
 const apikey = "4afa3d603c734013bb7086dcf25a1673";
 const url = "https://newsapi.org/v2/everything?q=";
 const form = document.querySelector('form')
+// const loader = document.querySelector('.loader')
 
 window.onload = () => {
   fetchurl("india");
@@ -56,3 +57,5 @@ form.addEventListener('submit' ,(event) =>  {
     let input = document.querySelector('input').value
     fetchurl(input)
 })
+
+

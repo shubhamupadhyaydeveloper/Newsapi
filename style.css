@@ -90,6 +90,8 @@
 }
 
 #news-container{
+    margin-top: 55vh;
+    position: absolute;
     padding: 3vh 4vh;
     display: flex;
     flex-wrap: wrap;
@@ -114,4 +116,35 @@
 
 #description {
     line-height: 3vh;
+}
+
+.herotext{
+    position: absolute;
+    margin-top: 25vh;
+    margin-left: 10vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8vh;
+    line-height: 15vh;
+}
+
+.hero2 span {
+    color: transparent;
+    -webkit-text-stroke: 1.4px black;
+
+}
+
+.loader{
+    scale: 0.5;
+    position: absolute;
+    margin-top: 45vh;
+    margin-left: 90vh;
+    opacity: 1;
+}
+
+.newstag{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    margin-top: 65vh;
+    margin-left: 10vh;
+
 }
